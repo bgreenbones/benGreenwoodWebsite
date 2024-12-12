@@ -1,0 +1,221 @@
+* {
+  min-height: 0;
+}
+
+#face {
+  /* max-height: 150px; */
+  max-width: 130px;
+  width: 20vw;
+  display: flex;
+  /* float: left; */
+  border-radius: 65px;
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
+}
+
+.navigation-menu {
+  z-index: 1;
+  position: sticky;
+  width: 100vw;
+  /* height: 100vh; */
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationButton {
+  display: flex;
+  flex-direction: row;
+}
+
+button.mobile {
+  margin-right: 1rem;
+}
+
+.hamburger {
+  /* display: flex; */
+  /* float: right; */
+  margin-right: 1rem !important;
+}
+
+#main-image div {
+  padding-top: 2rem;
+  margin-left: 10%;
+  margin-right: 20%
+}
+
+#main-image h1 {
+  text-align: left;
+}
+
+#main-image h2 {
+  text-align: right;
+}
+
+
+#navigation-menu-row {
+  /* height: 200px; */
+  width: 90%;
+  max-width: 750px;
+  padding: 0px 1vw;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  color:var(--accent-text);
+  padding: 0rem 1rem;
+  font-size:1.8rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+}
+
+.headerContent text {
+  width: 100%;
+}
+
+.navButtons {
+  justify-content: space-between;
+}
+
+.navButtons.mobile {
+  flex-wrap: wrap;
+}
+
+.headerSubcontent {
+  font-size:1.5rem;
+  display: inline-block;
+  color:cadetblue;
+}
+
+/* Apply styles when the viewport is in portrait mode */
+@media (max-aspect-ratio: 1/1.2) or (max-width: 590px) {
+/* @media (orientation: portrait) and (max-aspect-ratio: 1/1.2) { */
+  /* Your styles for portrait orientation */
+  #desktop-menu {
+    /* display: block;
+    position: absolute;
+    visibility:hidden;
+    width: 0px;
+    height: 0px; */
+  }
+}
+
+/* Apply styles when the viewport is in landscape mode */
+/* @media (orientation: landscape) and (min-aspect-ratio: 1/1.2) { */
+@media (min-aspect-ratio: 1/1.2) and (min-width: 590px) {
+  /* Your styles for landscape orientation */
+  #mobile-menu {
+    /* display: block;
+    position: absolute;
+    visibility:hidden;
+    width: 0px;
+    height: 0px; */
+  }
+}
+
+
+.bio-section {
+  width:100%;
+  clear:both;
+  padding-bottom: 1rem;
+}
+
+.bio-photo.left {
+  float: left;
+}
+.bio-photo.right {
+  float: right;
+}
+
+section {
+  margin: 1rem 0;
+  max-width: 900px;
+  display: inline-block;
+  text-align: center;
+}
+
+.album-section {
+  display: flex;
+  max-width: 45rem;
+}
+
+.album-photo {
+  float: right; 
+}
+
+#projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+@media (min-width: 590px) {
+  .mobile-only, .mobile-only > * {
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+  }
+  .desktop-only, .desktop-only > * {
+    visibility: visible;
+  }
+}
+
+
+@media (max-width: 590px) {
+  /* @media (orientation: portrait) and (max-aspect-ratio: 1/1.2) { */
+    /* Your styles for portrait orientation */
+    /* #desktop-menu {
+      position: absolute;
+      visibility:collapse;
+      width: 0px;
+      height: 0px;
+    } */
+    .mobile-only, .mobile-only > * {
+      visibility: visible;
+    }
+    .desktop-only, .desktop-only > * {
+      position: absolute;
+      visibility: hidden;
+      display: block;
+      height: 0px;
+      width: 0px;
+      margin: 0px;
+    }
+    #projectsGrid {
+      grid-template-columns: 1fr;
+    }
+    .album-section {
+      display: block;
+    }
+    .bio-photo.left {
+      /* display:block; */
+      float: none;
+      flex-direction: column;
+    }
+    .bio-photo.right {
+      /* display:block; */
+      float: none;
+      flex-direction: column;
+    }
+    .album-photo {
+      float: none;
+      display: block;
+      height: fit-content;
+      margin-top: 1rem;
+    }
+  }
+/* 
+.projects {
+  width: 50%;
+} */
