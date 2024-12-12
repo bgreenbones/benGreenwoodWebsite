@@ -36,7 +36,7 @@ function Nav({ height=200, bgImage=false }) {
 
     const navigationButtons = [
         { label: "music", href: "content/music", key:3 },
-        { label: "tech", href: "content/projects", key:2 },
+        { label: "tech", href: "content/tech", key:2 },
         { label: "bio", href: "content/bio", key:1 },
         // { label: "Contact", href: "content/contact", key:4 },
         // { label: "DONATE", href: "content/donate", key:5 },
@@ -70,7 +70,7 @@ function Nav({ height=200, bgImage=false }) {
                 <a href="/"><img src="/assets/selfie.jpg" id="face" alt="Ben's Face"/></a>
                 {isOpen ? <div className="headerContent navButtons mobile">{navigationButtons.map((button) => 
                             <button className={getButtonClasses(button)} key={button.key} onClick={() => handleClick(button)}>{button.label}</button>)}</div>
-                        : <>Ben Greenwood</> }
+                        : <>ben greenwood</> }
                 <IconButton className="hamburger" onClick={() => setOpen(!isOpen)} theme={theme} color="secondary">{isOpen ? <CloseIcon fontSize="large"/> : <MenuIcon fontSize="large"/> }</IconButton>
             </div>
             <div className="headerContent navButtons desktop-only">
