@@ -73,7 +73,7 @@ h3 { color: rgb(255, 252, 153); }
   flex-direction: column;
   width: 100%;
   max-width: var(--app-width);
-  background-color: var(--content-bg);
+  /* background-color: var(--content-bg); */
 }
 
 
@@ -248,7 +248,7 @@ button.visiting {
 }
 
 .album-paragraph {
-  display: grid;
+  /* display: grid; */
   place-items: center;
 }
 
@@ -272,7 +272,7 @@ button.visiting {
   background-image: linear-gradient(to right, #001347, #003730);
   background-size:cover;
   padding: 5%;
-  color: var(--app-bg);
+  /* color: var(--app-bg); */
 }
 #projectsOverlay {
   background-color: rgba(1,1,1,0.5);

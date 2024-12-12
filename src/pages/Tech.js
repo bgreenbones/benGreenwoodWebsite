@@ -37,8 +37,17 @@ function UpcomingProjects() { return upcomingEvents.map(event => getEventElement
 
 const Tech = () => <div id="projectsBackground">
                         <div id="projectsOverlay">
-                          <h2>Projects</h2>
-                          {/* <h2 style={{textAlign:"start"}}>Projects</h2> */}
+                          <h2>projects</h2>
+                          <h3>music generator</h3>
+                          My foray into algorithmic composition, conveniently embedded in a DAW plugin.
+                          <p/>Today, generative AI allows us to generate stuff that sounds like anything we've heard before.
+                          <p/>My generator outputs harmonies, rhythms, melodies, and basslines based on abstract concepts that I've manually coded up, instead of training on millions/billions of examples.
+                          <p/>Therefore, it's extremely efficient and free of copyright issues, and it outputs weird stuff that simultaneously sounds like nothing I've heard before, and seems oddly close to the music swimming around in my subconcious brain.
+                          <p/>
+                          <img style={{maxWidth: "100%", borderRadius: "10px"}} src="../media/projects/generateStuffScreenshot.png"></img>
+                          <div style={{fontSize: 12}}>Pictured: a beautiful UI that makes it clear I am trying to make tons of money off this thing.</div>
+                          <p/>Some stuff this thing has spat out (sounds could be whatever synths you want, as long as you can get MIDI signals into them):
+                          
                           <div id="projectsGrid">
                             {/* <div className="projects" style={{paddingRight:"1rem"}}><h3 style={{textAlign:"start"}}>Upcoming Projects</h3>{UpcomingProjects()}</div>
                             <div className="projects"><h3 style={{textAlign:"start"}}>Past Projects</h3>{PastProjects()}</div> */}

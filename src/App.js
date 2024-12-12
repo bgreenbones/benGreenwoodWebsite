@@ -44,7 +44,7 @@ function App() {
                     <Nav height={navBarHeight} bgImage={!navBarIsTransparent}/>
                     <div className="main-image parallax__layer parallax__layer--back" id="main-image">
                       <div style={{marginTop: `${navBarHeight}px`}}>
-                        <h1>Ben Greenwood</h1>
+                        <h1>ben greenwood</h1>
                         <h2>software engineer, drummer</h2>
                         I play drums (and other things) and try to build software that is useful for me.
                         <p/>
