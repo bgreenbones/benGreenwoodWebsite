@@ -35,9 +35,9 @@ function Nav({ height=200, bgImage=false }) {
     const [isOpen, setOpen] = useState(false);
 
     const navigationButtons = [
+        { label: "music", href: "content/music", key:3 },
         { label: "tech", href: "content/projects", key:2 },
-        { label: "music", href: "content/album", key:3 },
-        { label: "bio", href: "content/about", key:1 },
+        { label: "bio", href: "content/bio", key:1 },
         // { label: "Contact", href: "content/contact", key:4 },
         // { label: "DONATE", href: "content/donate", key:5 },
       ];

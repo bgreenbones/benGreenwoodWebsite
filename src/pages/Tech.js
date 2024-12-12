@@ -35,15 +35,15 @@ function getEventElement(event) {
 function PastProjects() { return pastEvents.map(event => getEventElement(event)) };
 function UpcomingProjects() { return upcomingEvents.map(event => getEventElement(event)) };
 
-const Events = () => <div id="projectsBackground">
+const Tech = () => <div id="projectsBackground">
                         <div id="projectsOverlay">
                           <h2>Projects</h2>
                           {/* <h2 style={{textAlign:"start"}}>Projects</h2> */}
                           <div id="projectsGrid">
-                            <div className="projects" style={{paddingRight:"1rem"}}><h3 style={{textAlign:"start"}}>Upcoming Projects</h3>{UpcomingProjects()}</div>
-                            <div className="projects"><h3 style={{textAlign:"start"}}>Past Projects</h3>{PastProjects()}</div>
+                            {/* <div className="projects" style={{paddingRight:"1rem"}}><h3 style={{textAlign:"start"}}>Upcoming Projects</h3>{UpcomingProjects()}</div>
+                            <div className="projects"><h3 style={{textAlign:"start"}}>Past Projects</h3>{PastProjects()}</div> */}
                           </div>
                         </div>
                       </div>;
 
-export default Events;
+export default Tech;

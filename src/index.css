@@ -269,7 +269,7 @@ button.visiting {
 }
 
 #projectsBackground {
-  background-image: url("../public/assets/events-bg.jpg");
+  background-image: linear-gradient(to right, #001347, #003730);
   background-size:cover;
   padding: 5%;
   color: var(--app-bg);

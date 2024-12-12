@@ -3,10 +3,9 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
 import "./layout.css";
 import "./parallax.css";
-import About from "./pages/Bio";
-import Contact from "./pages/Contact";
-import Events from "./pages/Events";
-import Album from "./pages/Album";
+import Bio from "./pages/Bio";
+import Tech from "./pages/Tech";
+import Music from "./pages/Music";
 import Nav from "./Nav";
 import _ from "lodash";
 
@@ -53,18 +52,16 @@ function App() {
                       </div>
                     </div>
                     <div className="main-section parallax__layer parallax__layer--base" id="main-section">
-                      <About/><Events/><Album/><Contact/>
+                      <Music/><Tech/><Bio/>
                     </div>
                   </div>
                 </>} />
               <Route path="/content" element={<><Nav height={navBarHeight} bgImage={true}/><Outlet /></>}>
                     <Route index element={<><div>404</div></>} />
                     <Route path="*" element={<><div>404</div></>} />
-                    <Route path="about" element={<About/>} />
-                    <Route path="projects" element={<Events/>} />
-                    <Route path="album" element={<Album/>} />
-                    <Route path="contact" element={<Contact/>} />
-                    <Route path="donate" element={<h1>Coming soon!</h1>} />
+                    <Route path="music" element={<Music/>} />
+                    <Route path="tech" element={<Tech/>} />
+                    <Route path="bio" element={<Bio/>} />
                   </Route>
               </Routes>
             </BrowserRouter>
