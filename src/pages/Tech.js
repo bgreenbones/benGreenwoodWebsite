@@ -66,7 +66,7 @@ const Tech = () => (
     <p/><img style={{maxWidth: "100%", borderRadius: "10px", marginLeft: "2px"}} src="../media/projects/stickings2.jpg"></img>
     <p/>Will give me just that!
     <p/><img style={{maxWidth: "100%", borderRadius: "10px", marginRight: "2px"}} src="../media/projects/stickings1.jpg"></img>
-    <p/>I haven't released or deployed this anywhere (because I'm trying to make money from it), but you could build it from the source available on <a href="https://github.com/bgreenbones/drumPracticeHelper">github</a>. It is built using Flutter, which can get you up and running desktop, mobile, or web.
+    <p/>I haven't released or deployed this anywhere, but you could build it from the source available on <a href="https://github.com/bgreenbones/drumPracticeHelper">github</a>. It is built using Flutter, which can get you up and running desktop, mobile, or web.
     
     <div id="projectsGrid">
       {/* <div className="projects" style={{paddingRight:"1rem"}}><h3 style={{textAlign:"start"}}>Upcoming Projects</h3>{UpcomingProjects()}</div>
