@@ -112,6 +112,12 @@ const periods = [
       "<p>Personal projects: the music generator and drum practice app detailed on the projects tab of this page!", techColor, techColor],
     ["drums", "MMus", 6, mMusDetails, musicColor, musicColor],
   ],
+  [
+    ["MMus", "piano", 7, "Working as a pianist at a ballet school, which instigated a lot of practice (and asking my pianist wife a lot of questions) and growth on the intstrument.", techColor, musicColor],
+    ["MMus", "drums", 6, "Joined a band in Chicago upon moving there, recorded an album pretty quickly", musicColor, musicColor],
+    ["organ", "organ", 1, "Continuing church work", techColor, musicColor],
+    ["software engineer", "teaching", 2, "I've put software work on hold to give this music thing a shot. I secured a position teaching an after school music program using video games", techColor, musicColor],
+  ],
 ];
 var activityNamesModified = {};
 
