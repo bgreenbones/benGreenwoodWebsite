@@ -45,8 +45,8 @@ function App() {
                     <div className="main-image parallax__layer parallax__layer--back" id="main-image">
                       <div style={{marginTop: `${navBarHeight}px`}}>
                         <h1>ben greenwood</h1>
-                        <h2>software engineer, drummer</h2>
-                        I play drums (and other things) and try to build software that is useful for me.
+                        <h2>musician, programmer</h2>
+                        I play drums, keyboard instruments, compose and create music, and try to build software that is useful for me.
                         <p/>
                         This is a space where I can show some of that stuff off and you can get a detailed history of my professional and artistic past if you are, for some reason, into that sort of thing.
                       </div>
